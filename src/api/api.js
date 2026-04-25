@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://crud-react-backend.vercel.app/",
+  baseURL: "https://crud-react-backend.vercel.app"
 });
+
 
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
